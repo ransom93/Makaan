@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .container {
+        padding: 0.5rem;
+      }
+
+      .apartments-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      .apartment-card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: white;
+        border: 1px solid #eee;
+      }
+
+      .image-placeholder {
+        width: 100%;
+        height: 120px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .image-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .apartment-info {
+        padding: 0.5rem;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .price {
+        font-size: 1rem;
+        color: #2a5298;
+        font-weight: bold;
+        margin-bottom: 0.2rem;
+      }
+
+      .location {
+        color: #666;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .features {
+        color: #444;
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
+      }
+
+      /* For larger screens */
+      @media (min-width: 768px) {
+        .apartments-grid {
+          grid-template-columns: repeat(5, 1fr);
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Office For Sale</h1>
+      <p style="font-size: 0.9rem">Find Your Perfect Home</p>
+    </header>
+
+    <div class="container">
+      <div class="apartments-grid">
+        <!-- Apartment 1 -->
+        <a href="./office/1.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/1/830-Farmington-Ave-West-Hartford-CT-Building-Photo-1-Large.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$60,000</div>
+              <div class="location">Lexington, NC 27292</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Apartment 2 -->
+        <a href="./office/2.html"
+          ><div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/2/3507-W-Highland-Rd-Milford-MI-Building-Photo-1-Large.png"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$50,000</div>
+              <div class="location">City Center</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+
+        <!-- Apartment 3 -->
+        <a href="./office/3.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/3/3505-NE-24th-Ave-Amarillo-TX-Building-Photo-3-LargeHighDefinition.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$58,000</div>
+              <div class="location">Riverside View</div>
+              <div class="features">4 Bed • 2 Bath</div>
+            </div>
+          </div>
+        </a>
+        <!-- Apartment 4 -->
+        <a href="./office/4.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/4/453-Main-St-Ramona-CA-Building-Photo-3-LargeHighDefinition.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$30,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <!-- Apartment 5-->
+        <a href="./office/5.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/5/460-N-Gage-Ave-Los-Angeles-CA-Building-Photo-1-Large.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$78,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <!-- Apartment 6 -->
+        <a href="./office/6.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/6/17100-17114-S-Park-Ave-South-Holland-IL-Building-Photo-1-Large.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$25,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <a href="./office/7.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/7/64-Chestnut-St-Lockport-NY-Building-Photo-3-LargeHighDefinition.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$55,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <a href="./office/8.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/8/15500-SW-29th-St-Miramar-FL-Building-Photo-3-LargeHighDefinition.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$47,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <a href="./office/9.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/9/OfficeRetail-Shell-Near-DTLA-Hotspots-Building-Photo-1-Large.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$25,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <a href="./office/10.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/New folder/10/450-W-2nd-St-Claremont-CA-Building-Photo-1-Large.jpg"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$33,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

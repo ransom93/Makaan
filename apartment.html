@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartments</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .container {
+        padding: 0.5rem;
+      }
+
+      .apartments-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      .apartment-card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: white;
+        border: 1px solid #eee;
+      }
+
+      .image-placeholder {
+        width: 100%;
+        height: 120px;
+        position: relative;
+        overflow: hidden;
+      }
+a{
+  text-decoration: none;
+}
+      .image-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .apartment-info {
+        padding: 0.5rem;
+      }
+
+      .price {
+        font-size: 1rem;
+        color: #2a5298;
+        font-weight: bold;
+        margin-bottom: 0.2rem;
+      }
+
+      .location {
+        color: #666;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .features {
+        color: #444;
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
+      }
+
+      /* For larger screens */
+      @media (min-width: 768px) {
+        .apartments-grid {
+          grid-template-columns: repeat(5, 1fr);
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Apartments For Sale</h1>
+      <p style="font-size: 0.9rem">Find Your Perfect Home</p>
+    </header>
+
+    <div class="container">
+      <div class="apartments-grid">
+        <!-- Apartment 1 -->
+        <a href="./apartment/1.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-1/1347e329f060838879119d5cfc999814-p_e.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$$90,000</div>
+              <div class="location">Lexington, NC 27292</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Apartment 2 -->
+        <a href="./apartment/2.html"
+          ><div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-2/0fa450f67fe33b834c0eb0810a382318-cc_ft_384.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$50,000</div>
+              <div class="location">City Center</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+
+        <!-- Apartment 3 -->
+        <a href="./apartment/3.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-3/0e4b19e13247c50765906492a05facd2-sc_1536_1024.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$55,000</div>
+              <div class="location">Riverside View</div>
+              <div class="features">4 Bed • 2 Bath</div>
+            </div>
+          </div>
+        </a>
+        <!-- Apartment 4 -->
+        <a href="./apartment/4.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-4/7472159e2adacbdf555d9fd019bd9ffe-uncropped_scaled_within_1536_1152.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$30,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <!-- Apartment 5-->
+        <a href="./apartment/5.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-5/16e4b3108064c06aa38ba87cdf9d3fd0-cc_ft_768.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$78,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <!-- Apartment 6 -->
+        <a href="./apartment/6.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-6/11dc8568d4b19cdfd3e02f9684e600a4-cc_ft_768.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$25,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <a href="./apartment/7.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-7/1f48d3160bfdb6965ef5c3f667d67282-p_e.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">40,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <a href="./apartment/8.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-8/1415f2d7124d9aa4dfb3c20b5196b72c-cc_ft_384.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$47,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <a href="./apartment/9.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/New folder/0ffd26cfebfd7d09ceff9c46c880559c-sc_1536_1024.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$30,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+        <a href="./apartment/10.html">
+          <div class="apartment-card">
+            <div class="image-placeholder">
+              <img
+                src="./img/apartment/apartment-9/lolich-farms---cabernet---lot-118---primary-bath.webp"
+                alt="Apartment"
+              />
+            </div>
+            <div class="apartment-info">
+              <div class="price">$33,000</div>
+              <div class="location">Park District</div>
+              <div class="features">2 Bed • 1 Bath</div>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
